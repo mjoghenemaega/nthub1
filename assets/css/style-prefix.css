@@ -2113,13 +2113,12 @@ footer {
  */
 
  @media (min-width: 300px) {
-  .category-item { min-width: -webkit-calc(50% - 8px); min-width: calc(65% - 8px); 
-    
-    
-  
+  .category-item { min-width: -webkit-calc(50% - 8px); min-width: calc(65% - 8px);   
   }
   
+  .slider-item { aspect-ratio: 3 / 2; }
 
+  
 
  }
 
@@ -2182,8 +2181,9 @@ footer {
    * #BANNER
    */
 
-  .slider-item { aspect-ratio: 5 / 3; }
+   .slider-item { aspect-ratio: 4 / 2; }
 
+  
   .banner-content {
     top: 50%;
     right: auto;

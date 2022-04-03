@@ -151,7 +151,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding: 0 15px; }
+.container { padding: 0 1px; }
 
 .has-scrollbar { padding-bottom: 5px; }
 

@@ -293,10 +293,13 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .newsletter-img { display: none; }
 
 .modal-content {
+  
   position: relative;
   max-width: 350px;
   margin: 20px;
-  background: var(--white);
+  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+  url(/assets/images/electronics-banner-1.jpg) center no-repeat;
+  background-size: cover;
   -webkit-border-radius: var(--border-radius-md);
           border-radius: var(--border-radius-md);
   overflow: hidden;
@@ -338,19 +341,29 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .newsletter {
   padding: 50px 30px;
   text-align: center;
+  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+  url(/assets/images/electronics-banner-1.jpg) center no-repeat;
+  background-size: cover;
+ 
+  color: white;
+
 }
+
 
 .newsletter-header { margin-bottom: 20px; }
 
 .newsletter-title {
-  color: var(--onyx);
+  color: #fff;
   font-size: var(--fs-2);
   font-weight: var(--weight-600);
   margin-bottom: 10px;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  
+
 }
 
 .newsletter-desc {
-  color: var(--sonic-silver);
+  color: #fff;
   font-size: var(--fs-7);
   line-height: 1.6;
 }
@@ -377,6 +390,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   -webkit-transition: var(--transition-timing);
   -o-transition: var(--transition-timing);
   transition: var(--transition-timing);
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+
 }
 
 .btn-newsletter:hover { background: var(--salmon-pink); }
@@ -1166,6 +1181,127 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 
 
+/*-----------------------------------*\
+  #FLASHSALE
+\*-----------------------------------*/
+.flashsale-container .container .row{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.6rem;
+
+}
+.container .row .see-all{ 
+  font-weight: bold;
+
+}
+
+.product-flash .showcase {
+  width: 10rem;
+  height: 14rem;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+ 
+  
+}
+
+.product-flash .showcase:hover { -webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1); box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1); }
+
+.product-flash .showcase-banner .flash-image{ 
+width: 100%;
+height: 100%;
+}
+.product-flash .product-img.default {
+  position: relative;
+  width: 10%;
+  height: 10%
+}
+
+
+
+
+.product-flash .showcase-badge {
+  position: absolute;
+  top: 40px;
+  left: 35px;
+  background: var(--ocean-green);
+  font-size: var(--fs-8);
+  font-weight: var(--weight-500);
+  color: var(--white);
+  padding: 0 8px;
+  -webkit-border-radius: var(--border-radius-sm);
+          border-radius: var(--border-radius-sm);
+  z-index: 3;
+}
+
+.product-flash .showcase-badge.angle {
+  top: 8px;
+  left: -29px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 5px 40px;
+}
+
+.product-flash .showcase-badge.black { background: var(--eerie-black); }
+.product-flash .showcase-badge.pink { background: var(--salmon-pink); }
+
+.product-flash .showcase-content { padding: 15px 20px 0; }
+.product-flash .showcase-category {
+  color: var(--salmon-pink);
+  font-size: var(--fs-9);
+  font-weight: var(--weight-500);
+  text-transform: uppercase;
+ 
+}
+
+.product-flash .showcase-title {
+  color: var(--sonic-silver);
+  font-size: var(--fs-8);
+  font-weight: var(--weight-700);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+ 
+}
+
+.product-flash .showcase-title:hover { color: var(--eerie-black); }
+
+.product-flash .showcase-rating {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--sandy-brown);
+ 
+}
+.product-flash .price-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  font-size: var(--fs-7);
+  color: var(--eerie-black);
+  
+}
+
+
+
+.product-flash .price { font-weight: var(--weight-700); }
+
+.product-flash del { color: var(--sonic-silver);
+ }
+
+
+
+
+
+/* 
+CAROUSEEL */
+/* 
 
 /*-----------------------------------*\
   #PRODUCT MINIMAL
@@ -2118,6 +2254,64 @@ footer {
   
   .slider-item { aspect-ratio: 3 / 2; }
 
+  .flashsale-container .container .row{ 
+    padding: 0.4rem;
+    font-size: 0.85rem;
+  
+  }
+  /* 
+  FLASHSALE */
+  .product-flash .showcase {
+    width: 8.5rem;
+    height: 13rem;
+    
+  }
+  .product-flash .showcase-title {
+    
+    font-size: var(--fs-11);
+    font-weight: var(--weight-700);
+    letter-spacing: 0.2px;
+    margin: 0.3px;
+   
+  }
+  .product-flash .showcase-rating {
+    font-size: var(--fs-10);
+    margin: 1px;
+   
+  }
+  
+.product-flash.price-box {
+  font-size: var(--fs-9);
+  
+}
+
+.product-flash .price { 
+ 
+font-size: var(--fs-11);
+margin: 0.3px;
+
+ }
+
+
+.product-flash del { 
+  color: var(--sonic-silver);
+  font-size: var(--fs-10); 
+
+  
+}
+
+.product-flash .showcase-category {
+  
+  font-size: var(--fs-11);
+ 
+}
+
+.product-flash .showcase-banner .flash-image{ 
+  height: 6rem;
+  width: 8rem;
+  }
+
+
   
 
  }
@@ -2222,6 +2416,63 @@ footer {
     gap: 30px;
   }
 
+  .flashsale-container .container .row{ 
+    padding: 0.4rem;
+    font-size: 0.8rem;
+  
+  }
+
+/* 
+  FLASHSALE */
+  .product-flash .showcase {
+    width: 8.7rem;
+    height: 13rem;
+    
+  }
+  .product-flash .showcase-title {
+    
+    font-size: var(--fs-11);
+    font-weight: var(--weight-700);
+    letter-spacing: 0.5px;
+    margin: 0.3px;
+   
+  }
+  .product-flash .showcase-rating {
+    font-size: var(--fs-10);
+    margin: 1px;
+   
+  }
+  
+.product-flash.price-box {
+  font-size: var(--fs-9);
+  
+}
+
+.product-flash .price { 
+ 
+font-size: var(--fs-11);
+margin: 0.3px;
+
+ }
+
+
+.product-flash del { 
+  color: var(--sonic-silver);
+  font-size: var(--fs-10); 
+
+  
+}
+
+.product-flash .showcase-category {
+  
+  font-size: var(--fs-11);
+ 
+}
+
+.product-flash .showcase-banner .flash-image{ 
+  height: 6rem;
+  width: 8rem;
+  }
 
 
   /**
@@ -2350,6 +2601,72 @@ footer {
   .product-featured .countdown { gap: 20px; }
 
 
+  
+  .flashsale-container .container .row{ 
+    padding: 0.4rem;
+    font-size: 0.85rem;
+  
+  }
+
+  /* 
+  FLASHSALE */
+  .product-flash .showcase {
+    width: 8.9rem;
+    height: 13rem;
+    
+  }
+  .product-flash .showcase-title {
+    
+    font-size: var(--fs-11);
+    font-weight: var(--weight-700);
+    letter-spacing: 0.5px;
+    margin: 0.3px;
+   
+  }
+  .product-flash .showcase-rating {
+    font-size: var(--fs-10);
+    margin: 1px;
+   
+  }
+  
+.product-flash.price-box {
+  font-size: var(--fs-9);
+  
+}
+
+.product-flash .price { 
+ 
+font-size: var(--fs-11);
+margin: 0.3px;
+
+ }
+
+
+.product-flash del { 
+  color: var(--sonic-silver);
+  font-size: var(--fs-10); 
+
+  
+}
+
+.product-flash .showcase-category {
+  
+  font-size: var(--fs-11);
+ 
+}
+
+.product-flash .showcase-banner .flash-image{ 
+  height: 6rem;
+  width: 8rem;
+  }
+
+
+  
+
+
+
+
+
 
   /**
    * #CTA
@@ -2401,7 +2718,11 @@ footer {
 
   html { font-size: 17px; }
 
-
+  .flashsale-container .container .row{ 
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  
+  }
 
   /**
    * #REUSED STYLE 
@@ -2436,6 +2757,61 @@ footer {
   .newsletter-img { display: block; }
 
   .newsletter { text-align: left; }
+
+/* 
+  FLASHSALE */
+  .product-flash .showcase {
+    width: 9rem;
+    height: 14rem;
+    
+  }
+  .product-flash .showcase-title {
+    
+    font-size: var(--fs-10);
+    font-weight: var(--weight-600);
+    letter-spacing: 0.5px;
+    margin: 1px;
+   
+  }
+  .product-flash .showcase-rating {
+    font-size: var(--fs-10);
+    margin: 2px;
+   
+  }
+  
+.product-flash.price-box {
+  font-size: var(--fs-9);
+  
+}
+
+.product-flash .price { 
+ 
+font-size: var(--fs-11);
+
+ }
+
+
+.product-flash del { 
+  color: var(--sonic-silver);
+  font-size: var(--fs-10); 
+
+  
+}
+
+.product-flash .showcase-category {
+  
+  font-size: var(--fs-10);
+ 
+}
+
+.product-flash .showcase-banner .flash-image{ 
+  height: 7rem;
+  width: 9rem;
+  }
+
+
+  
+
 
 
 

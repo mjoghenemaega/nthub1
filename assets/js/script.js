@@ -13,7 +13,16 @@ modalCloseOverlay.addEventListener('click', modalCloseFunc);
 modalCloseBtn.addEventListener('click', modalCloseFunc);
 
 
-
+//lightjs slider
+$(document).ready(function() {
+  $('#autoWidth').lightSlider({
+      autoWidth:true,
+      loop:true,
+      onSliderLoad: function() {
+          $('#autoWidth').removeClass('cS-hidden');
+      } 
+  });  
+});
 
 
 // notification toast variables

@@ -1180,7 +1180,9 @@ margin-top: 5px; }
 }
 
 
-
+/*-----------------------------------*\
+  #DEALS
+\*-----------------------------------*/
 
 /*-----------------------------------*\
   #FLASHSALE
@@ -2271,7 +2273,48 @@ footer {
     font-size: 0.85rem;
   
   }
-  /* 
+  .crib{
+    background-color: #2298FBB3;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  #none{
+    display: none;
+  }
+
+/*-----------------------------------*\
+  #DEALS
+\*-----------------------------------*/
+.image-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1px;
+}
+.image-container img{
+
+  flex-direction: row;
+  margin: 2px;
+  
+  padding-left: 1px ;
+  width: 20%;
+  border-radius: 5%;
+
+  
+}
+
+
+  /* .crib .see-al{
+  
+   }
+  /*  
   FLASHSALE */
   .product-flash .showcase {
     width: 8.5rem;
@@ -2307,7 +2350,8 @@ margin: 0.3px;
 
 .product-flash del { 
   color: var(--sonic-silver);
-  font-size: var(--fs-7); 
+  font-size: var(--fs-7);
+  margin: 0.3px; 
 
   
 }
@@ -2338,6 +2382,10 @@ margin: 0.3px;
   /**
    * #CUSTOM PROPERTY
    */
+
+   .crib{
+    background-color: #2298FBB3;
+  }
 
   :root {
 
@@ -2457,7 +2505,7 @@ margin: 0.3px;
   
 .product-flash.price-box {
   font-size: var(--fs-7);
-  margin-bottom: 1.5px;
+  margin-bottom: 0.5px;
   
 }
 
@@ -2592,6 +2640,10 @@ margin: 0.3px;
   .banner-content { background: none; }
 
 
+  #none{
+    display: block;
+  }
+
 
   /**
    * #CATEGORY
@@ -2717,6 +2769,7 @@ margin-bottom: 1.5px;
    * #CUSTOM PROPERTY
    */
 
+
   :root {
 
     /**
@@ -2740,6 +2793,10 @@ margin-bottom: 1.5px;
     font-size: 0.9rem;
   
   }
+.image-container img{
+    width: 10%;
+      
+    }
 
   /**
    * #REUSED STYLE 
@@ -2984,6 +3041,10 @@ font-size: var(--fs-7);
   }
 
 
+  .image-container img{
+  width: 12%;
+    
+  }
 
   /**
    * #REUSED STYLE 
@@ -2991,8 +3052,7 @@ font-size: var(--fs-7);
 
   .container { max-width: 980px; }
 
-
-
+  
   /**
    * #NOTIFICATION TOAST 
    */

@@ -153,11 +153,11 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .container { padding: 0 1px; }
 
-.has-scrollbar { padding-bottom: 5px; }
+.has-scrollbar { padding-bottom: 3px; }
 
 .has-scrollbar::-webkit-scrollbar {
   width: 12px; /* for vertical scroll */
-  height: 12px; /* for horizontal scroll */
+  height: 10px; /* for horizontal scroll */
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
@@ -813,7 +813,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   #BANNER
 \*-----------------------------------*/
 
-.banner { margin: 30px 0; }
+.banner { margin-top: 30px; }
 
 .slider-container {
   display: -webkit-box;
@@ -911,7 +911,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   #CATEGORY
 \*-----------------------------------*/
 
-.category { margin-bottom: 30px; }
+.category { margin-bottom: 5px;
+margin-top: 5px; }
 
 .category-item-container {
   display: -webkit-box;
@@ -1195,6 +1196,12 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   font-weight: bold;
 
 }
+.product-flash{
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 .product-flash .showcase {
   width: 10rem;
@@ -1202,8 +1209,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
- 
-  
+  gap: 15px;
 }
 
 .product-flash .showcase:hover { -webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1); box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1); }
@@ -1260,10 +1266,15 @@ height: 100%;
 
 .product-flash .showcase-title {
   color: var(--sonic-silver);
-  font-size: var(--fs-8);
+  font-size: var(--fs-7);
   font-weight: var(--weight-700);
   text-transform: capitalize;
   letter-spacing: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  letter-spacing: 0.5px;
  
 }
 
@@ -2263,31 +2274,31 @@ footer {
   FLASHSALE */
   .product-flash .showcase {
     width: 8.5rem;
-    height: 13rem;
+    height: 12rem;
     
   }
   .product-flash .showcase-title {
     
-    font-size: var(--fs-11);
+    font-size: var(--fs-7);
     font-weight: var(--weight-700);
     letter-spacing: 0.2px;
     margin: 0.3px;
    
   }
   .product-flash .showcase-rating {
-    font-size: var(--fs-10);
+    font-size: var(--fs-7);
     margin: 1px;
    
   }
   
 .product-flash.price-box {
-  font-size: var(--fs-9);
+  font-size: var(--fs-7);
   
 }
 
 .product-flash .price { 
  
-font-size: var(--fs-11);
+font-size: var(--fs-7);
 margin: 0.3px;
 
  }
@@ -2295,14 +2306,14 @@ margin: 0.3px;
 
 .product-flash del { 
   color: var(--sonic-silver);
-  font-size: var(--fs-10); 
+  font-size: var(--fs-7); 
 
   
 }
 
 .product-flash .showcase-category {
   
-  font-size: var(--fs-11);
+  font-size: var(--fs-7);
  
 }
 
@@ -2426,31 +2437,32 @@ margin: 0.3px;
   FLASHSALE */
   .product-flash .showcase {
     width: 8.7rem;
-    height: 13rem;
+    height: 12rem;
     
   }
   .product-flash .showcase-title {
     
-    font-size: var(--fs-11);
+    font-size: var(--fs-7);
     font-weight: var(--weight-700);
     letter-spacing: 0.5px;
     margin: 0.3px;
    
   }
   .product-flash .showcase-rating {
-    font-size: var(--fs-10);
+    font-size: var(--fs-7);
     margin: 1px;
    
   }
   
 .product-flash.price-box {
-  font-size: var(--fs-9);
+  font-size: var(--fs-7);
+  margin-bottom: 1.5px;
   
 }
 
 .product-flash .price { 
  
-font-size: var(--fs-11);
+font-size: var(--fs-7);
 margin: 0.3px;
 
  }
@@ -2458,14 +2470,14 @@ margin: 0.3px;
 
 .product-flash del { 
   color: var(--sonic-silver);
-  font-size: var(--fs-10); 
+  font-size: var(--fs-8); 
 
   
 }
 
 .product-flash .showcase-category {
   
-  font-size: var(--fs-11);
+  font-size: var(--fs-8);
  
 }
 
@@ -2545,6 +2557,9 @@ margin: 0.3px;
             align-items: center;
     gap: 10px;
   }
+  
+.category { margin-bottom: 2px;
+  margin-top: 1px; }
 
   .header-top-actions select {
     border: none;
@@ -2612,51 +2627,52 @@ margin: 0.3px;
   FLASHSALE */
   .product-flash .showcase {
     width: 8.9rem;
-    height: 13rem;
+    height: 12.5rem;
     
   }
   .product-flash .showcase-title {
     
-    font-size: var(--fs-11);
+    font-size: var(--fs-7);
     font-weight: var(--weight-700);
     letter-spacing: 0.5px;
     margin: 0.3px;
    
   }
   .product-flash .showcase-rating {
-    font-size: var(--fs-10);
+    font-size: var(--fs-7);
     margin: 1px;
    
   }
   
 .product-flash.price-box {
-  font-size: var(--fs-9);
+  font-size: var(--fs-7);
+  margin-bottom: 1.5px;
   
 }
 
 .product-flash .price { 
  
-font-size: var(--fs-11);
-margin: 0.3px;
+font-size: var(--fs-7);
+margin-bottom: 1.5px;
 
  }
 
 
 .product-flash del { 
   color: var(--sonic-silver);
-  font-size: var(--fs-10); 
+  font-size: var(--fs-8); 
 
   
 }
 
 .product-flash .showcase-category {
   
-  font-size: var(--fs-11);
+  font-size: var(--fs-8);
  
 }
 
 .product-flash .showcase-banner .flash-image{ 
-  height: 6rem;
+  height: 6.5rem;
   width: 8rem;
   }
 
@@ -2762,38 +2778,38 @@ margin: 0.3px;
   FLASHSALE */
   .product-flash .showcase {
     width: 9rem;
-    height: 14rem;
+    height: 13rem;
     
   }
   .product-flash .showcase-title {
     
-    font-size: var(--fs-10);
+    font-size: var(--fs-7);
     font-weight: var(--weight-600);
     letter-spacing: 0.5px;
     margin: 1px;
    
   }
   .product-flash .showcase-rating {
-    font-size: var(--fs-10);
+    font-size: var(--fs-8);
     margin: 2px;
    
   }
   
 .product-flash.price-box {
-  font-size: var(--fs-9);
+  font-size: var(--fs-7);
   
 }
 
 .product-flash .price { 
  
-font-size: var(--fs-11);
+font-size: var(--fs-7);
 
  }
 
 
 .product-flash del { 
   color: var(--sonic-silver);
-  font-size: var(--fs-10); 
+  font-size: var(--fs-9); 
 
   
 }

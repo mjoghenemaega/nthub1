@@ -564,7 +564,10 @@ STICKY HEADER
   z-index: 4;
 }
 
-.header-logo { margin-top: 6px; }
+.header-logo { 
+  display: flex;
+  margin-top: 6px;
+font-size: 2rem; }
 
 .header-logo img { margin: auto; }
 
@@ -2277,11 +2280,9 @@ footer {
 
   
 }
-
-
-  /* .crib .see-al{
-  
-   }
+.header-logo .hamburger{
+  display: block;
+}
   /*  
   FLASHSALE */
   .product-flash .showcase {
@@ -3409,6 +3410,9 @@ font-size: var(--fs-7);
   .container { max-width: 1200px; }
 
 
+  .header-logo .hamburger{
+    display: none;
+  }
 
   /**
    * #HEADER

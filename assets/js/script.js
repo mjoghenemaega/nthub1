@@ -48,6 +48,17 @@ $(document).ready(function() {
   });  
 });
 
+//preloader
+
+
+//scroll 
+document.querySelector(".scroll-btn").addEventListener("click", () => {
+  document.querySelector("html").style.scrollBehavior = "smooth";
+  setTimeout(() => {
+    document.querySelector("html").style.scrollBehavior = "unset";
+  }, 1000);
+});
+
 
 // notification toast variables
 const notificationToast = document.querySelector('[data-toast]');

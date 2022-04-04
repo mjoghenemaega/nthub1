@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 @codewithsadee 
+ * copyright 2022 @mjoghenemaega 
  */
 
 
@@ -130,6 +130,7 @@ body { background: var(--white); }
 body::-webkit-scrollbar { width: 15px; }
 
 body::-webkit-scrollbar-track {
+
   background: var(--white);
   border-left: 1px solid var(--cultured);
 }
@@ -151,9 +152,11 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { margin: 0;
-padding: 0; }
+ .container { margin: 0;
+  padding: 0;
+   }
 
+   
 .has-scrollbar { padding-bottom: 1px; }
 
 .has-scrollbar::-webkit-scrollbar {
@@ -182,10 +185,6 @@ padding: 0; }
   border-bottom: 1px solid var(--cultured);
   margin-bottom: 30px;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #MAIN
@@ -230,7 +229,7 @@ padding: 0; }
   background: hsla(0, 0%, 0%, 0.5);
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  display: -ms-flexbox; 
   display: flex;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -1282,8 +1281,25 @@ height: 100%;
  }
 
 
+/* 
+SCROLL-BUTTON */
 
-
+.scroll-btn {
+  position: fixed;
+  right: 1rem;
+  bottom: 4rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #e98432ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  z-index: 1;
+  box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+}
 
 /* 
 CAROUSEEL */

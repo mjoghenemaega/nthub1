@@ -2280,6 +2280,9 @@ footer {
 
   
 }
+.header-logo { 
+font-size: 2rem; }
+
 .header-logo .hamburger{
   display: block;
 }
@@ -2540,6 +2543,9 @@ margin: 0.3px;
   }
 
   .header-logo { margin-bottom: 0; }
+  
+.header-logo { 
+  font-size: 2rem; }
 
   .header-top-actions {
     display: -webkit-box;

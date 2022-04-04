@@ -151,9 +151,10 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding: 0 1px; }
+.container { margin: 0;
+padding: 0; }
 
-.has-scrollbar { padding-bottom: 3px; }
+.has-scrollbar { padding-bottom: 1px; }
 
 .has-scrollbar::-webkit-scrollbar {
   width: 12px; /* for vertical scroll */
@@ -562,6 +563,7 @@ STICKY HEADER
   padding: 5px 10px;
   border-bottom: 1px solid var(--cultured);
   z-index: 4;
+
 }
 
 .header-logo { 
@@ -1238,8 +1240,8 @@ height: 100%;
 
 .product-flash .showcase-title {
   
-  color: var(--onyx);
-  font-size: var(--fs-7);
+  color: var(--eerie-black);
+  font-size: var(--fs-8);
   font-weight: var(--weight-700);
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -1594,11 +1596,13 @@ CAROUSEEL */
 .product-main { margin-bottom: 30px; }
 
 .product-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-  grid-template-columns: 1fr;
-  gap: 25px;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+ 
 }
 
 .product-grid .showcase {
@@ -1609,6 +1613,7 @@ CAROUSEEL */
   -webkit-transition: var(--transition-timing);
   -o-transition: var(--transition-timing);
   transition: var(--transition-timing);
+  width: 20%;
 }
 
 .product-grid .showcase:hover { -webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1); box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1); }
@@ -1719,15 +1724,21 @@ CAROUSEEL */
 }
 
 .product-grid .showcase-title {
-  color: var(--sonic-silver);
+  color: var(--eerie-black);
   font-size: var(--fs-8);
-  font-weight: var(--weight-300);
+  font-weight: var(--weight-200);
   text-transform: capitalize;
   letter-spacing: 1px;
   margin-bottom: 10px;
   -webkit-transition: var(--transition-timing);
   -o-transition: var(--transition-timing);
   transition: var(--transition-timing);
+  letter-spacing: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  letter-spacing: 0.5px;
 }
 
 .product-grid .showcase-title:hover { color: var(--eerie-black); }
@@ -2339,6 +2350,11 @@ margin: 0.3px;
   width: 8rem;
   }
 
+  .product-grid .showcase {
+    width: 45%;
+    margin: 2px;
+
+  }
 
   
 
@@ -2502,6 +2518,11 @@ margin: 0.3px;
 
   .cta-btn { --fs-9: 1rem; }
 
+  .product-grid .showcase {
+    width: 29%;
+    gap: 2;
+
+  }
 
 
   /**
@@ -2682,7 +2703,10 @@ margin-bottom: 1.5px;
   
 
 
+  .product-grid .showcase {
+    width: 27%;
 
+  }
 
 
 
@@ -3323,9 +3347,7 @@ font-size: var(--fs-7);
 
   .product-featured .countdown-content { padding: 5px 10px; }
 
-  .product-grid { -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); }
-
-
+  
 
   /**
    * #TESTIMONIALS, CTA & SERVICE 
@@ -3453,9 +3475,6 @@ font-size: var(--fs-7);
   .product-featured .showcase > div { min-width: -webkit-calc(50% - 10px); min-width: calc(50% - 10px); }
 
   .product-featured .display-number { --fs-5: 1.125rem; }
-
-  .product-grid { -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); }
-
 
 
   /**

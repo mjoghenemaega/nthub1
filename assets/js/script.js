@@ -36,6 +36,18 @@ $(document).ready(function() {
   });  
 });
 
+//lightjs slider3
+$(document).ready(function() {
+  $('#autoWidth3').lightSlider({
+      autoWidth:true,
+      loop:true,
+      auto:true,
+      onSliderLoad: function() {
+          $('#autoWidth3').removeClass('cS-hidden');
+      } 
+  });  
+});
+
 
 // notification toast variables
 const notificationToast = document.querySelector('[data-toast]');

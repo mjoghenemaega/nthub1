@@ -2280,6 +2280,16 @@ footer {
   color: inherit;
 }
 
+/* 18. 404 */
+.error-content h3 {
+	font-size: 36px;
+  font-weight: bolder;
+	margin-bottom: 10px;
+}
+.error-content p {
+	margin-bottom: 2rem;
+}
+
 
 
 

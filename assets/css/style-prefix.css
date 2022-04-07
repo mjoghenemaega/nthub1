@@ -3899,3 +3899,42 @@ pagination
 .pagination-wrap ul li a:hover {
 	color: #3d3d3d;
 }
+
+
+
+
+/* 21. Order-complete */
+.pattern-bg {
+  background-position: center;
+  background-size: cover;
+}
+.order-complete-bg {
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(235, 231, 229, 0.659);
+  box-shadow: 0px 5px 9.3px 0.7px rgba(183, 177, 199, 0.1);
+  padding: 70px 85px 35px;
+  text-align: center;
+  color: #000;
+}
+.order-complete-content h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-weight: var(--weight-700);
+}
+.order-complete-content p {
+  margin-bottom: 35px;
+}
+.order-complete-content .btn {
+  padding: 19px 40px 15px 40px;
+  background-color: #fc6b1e;
+  color: #fff;
+  font-weight: var(--weight-700);
+}
+.order-complete-content p.get-ans {
+  margin-bottom: 0;
+  margin-top: 62px;
+  font-size: 16px;
+  color: #252525;
+}

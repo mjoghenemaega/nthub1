@@ -165,15 +165,15 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
-  background: transparent;
+  background: #333;
   border: 3px solid var(--white);
   -webkit-border-radius: 20px;
           border-radius: 20px;
 }
 
-.has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 0%, 90%); }
+.has-scrollbar:hover::-webkit-scrollbar-thumb { background: hsl(0, 2%, 18%); }
 
-.has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 80%); }
+.has-scrollbar::-webkit-scrollbar-thumb:hover { background: hsl(0, 1%, 13%); }
 
 .title {
   color: var(--eerie-black);
@@ -3840,9 +3840,9 @@ search result
 	font-size: 13px;
 	font-weight: 500;
 	line-height: 1.6;
-	color: #7d7d7d;
+	color: #080808;
 	vertical-align: middle;
-	background: url("../img/icon/nw_selarw.png") no-repeat scroll 97.5% center;
+	background: url("./assets/imagpng") no-repeat scroll 97.5% center;
 	background-color: transparent;
 	border: 1px dotted rgb(167, 167, 167);
 	border-radius: 0;

@@ -1234,6 +1234,32 @@ height: 100%;
 
 
 
+.product-flash .showcase-badge2 {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  background: red;
+  font-size: var(--fs-9);
+  font-weight: var(--weight-500);
+  color: var(--white);
+  padding: 0 8px;
+  -webkit-border-radius: var(--border-radius-sm);
+          border-radius: var(--border-radius-sm);
+  z-index: 1;
+}
+
+.product-flash .showcase-badge.angle {
+  top: 8px;
+  left: -29px;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 5px 40px;
+}
+
+
 .product-flash .showcase-badge {
   position: absolute;
   top: 40px;
@@ -1258,6 +1284,8 @@ height: 100%;
   font-size: 11px;
   padding: 5px 40px;
 }
+
+
 
 .product-flash .showcase-badge.black { background: var(--eerie-black); }
 .product-flash .showcase-badge.pink { background: var(--salmon-pink); }
